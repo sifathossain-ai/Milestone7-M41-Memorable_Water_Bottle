@@ -15,7 +15,7 @@ const Cart = ({cart}) => {
     );
 };
 
-Cart.PropTypes = {
+Cart.propTypes = {
     cart: PropTypes.array.isRequired
 }
 
