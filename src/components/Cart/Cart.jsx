@@ -9,8 +9,9 @@ const Cart = ({cart, handleRemoveFromCart}) => {
             <div className="cartBottle">
                 {
                     cart.map(bottle => 
-                    <div key={bottle.id}>
+                    <div className='innerCart' key={bottle.id}>
                         <img src={bottle.img}></img>
+                        <br />
                         <button onClick={() => handleRemoveFromCart(bottle.id)}>Remove</button>
                     </div>)
                 }
